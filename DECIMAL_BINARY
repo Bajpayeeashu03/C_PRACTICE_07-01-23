@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+int num;
+int bin=0;
+int rem;
+int i=1;
+printf("Input A Decimal Number :");
+scanf("%d",&num);
+while(num!=0){
+rem=num%2;
+bin=bin+(rem*i);
+i=i*10;
+num=num/2;
+}
+printf("The Binary Number Is :%d",bin);
+return 0;
+}
+

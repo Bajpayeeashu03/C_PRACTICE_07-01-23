@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+int i;
+int num;
+int a1=0;
+int a2=1;
+int a3=a1+a2;
+printf("Enter The Number Of Terms :");
+scanf("%d",&num);
+printf("Fibonacci Series is :%d,%d,",a1,a2);
+for(i=3;i<=num;i++)
+{printf("%d,",a3);
+a1=a2;
+a2=a3;
+a3=a1+a2;
+}
+return 0;
+}
